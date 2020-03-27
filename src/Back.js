@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export const Back = ({ info }) => {
   return (
-    <article className="mycard" style={{ backgroundColor: info.primarycolor }}>
+    <article className="mycard back" style={{ backgroundColor: info.primarycolor }}>
       <div className="backTop">
         <h2>{info.title}</h2>
       </div>

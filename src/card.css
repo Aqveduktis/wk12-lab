@@ -4,6 +4,9 @@
     width: 300px;
     height: 300px;
   }
+  .back {
+    position: relative;
+  }
   
   .frontTop {
     display: flex;
@@ -20,16 +23,35 @@
   .backTop {
     display: flex;
     justify-content: space-around;
+    width: 100%;
     height: 50%;
+    position: relative;
+    top: 0px;
     overflow: hidden;
   }
+.backTop:hover {
+  height: 100%;
+  z-index: 3;
+  transition-duration: 5s;
+}
 
-  
   .backBottom {
     display: flex;
     justify-content: space-around;
+    width: 100%;
     height: 50%;
     overflow: hidden;
+    position: absolute;
+    bottom: 0px;
+  }
+  .backBottom:hover {
+    height: 100%;
+    transition-duration: 5s;
+  }
+
+  .backTop:hover + .backBottom {
+    height: 0px;
+    transition-duration: 5s;
   }
   
   button {
